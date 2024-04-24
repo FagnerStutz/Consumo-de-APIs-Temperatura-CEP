@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header> 
+        <h1 class="logo">DncWeather</h1>
+        <nav>
+            <a href="#endereco">Endereços</a>
+            <a href="#temperatura">Previsão de Tempo</a>
+        </nav>
+    </header>
+  
+    <!-- Seção -->
+
+    <section>
+      <div class="texto-img">
+          <h1 class="texto">Descubra Mais com Precisão:<br>
+            Previsões do Tempo e endereços<br>
+            em tempo real.
+          </h1>
+          <img src="./img/img1.svg" alt="ERROR">
+      </div>
+
+      <!-- Formulário -->
+
+      <form class="formulario">
+        <div class="form-label">
+
+          <div class="descricao-label">Primeiro Nome:</div>
+
+          <input type="text" class="form-input" id="primeiroNome" placeholder="Insira seu primeiro nome:">
+        </div>
+
+        <div class="form-label">
+          <div class="descricao-label">E-mail:</div>
+
+            <input type="email" class="form-input" id="email" placeholder="Insira seu e-mail:">
+        </div>
+
+        <div class="form-label">
+          <div class="descricao-label">Digite o CEP:</div>
+
+          <input name="cep" value="" type="text" v-model="cep" maxlength="8" class="form-input" id="cepInput" placeholder="Insira o CEP" >
+        </div>
+
+        <div class="form-label">
+          <div class="descricao-label">Digite a latitude e longitude para saber </div>
+            
+          <div class="lat-long">
+            <input type="text" class="form-input" id="lat" placeholder="Latitude">
+            <input type="text" class="form-input" id="long" placeholder="Longitude">
+          </div>
+        </div>
+            
+        <button type="button" onclick="buscarCEP()" class="botao-acessar"> Acessar </button>
+
+      </form>
+
+      <!-- Resultado de Busca  -->
+
+      
+      <div class="texto-img">
+        <h1 id="endereco" class="texto"> <br>Resultado da busca por CEP:
+        </h1>
+        <img src="./img/img2.svg" alt="ERROR">
+      </div>
+      
+
+      <div class="tables">
+        <div class="table-supior">
+          <div>Logradouro/nome</div>
+          <div>Bairro/Distrito</div>
+          <div>Localidade/UF</div>
+          <div> </div>
+        </div>
+
+        <div class="table-inferior">
+          <div>...</div>
+          <div>...</div>
+          <div>...</div>
+          <div> </div>
+          
+        </div>
+
+      </div>
+
+      <!-- Previsão por Região -->
+      
+      <div class="previsao-regiao">
+        <div class="texto-img">
+          <h1 class="texto"> <br>Previsão do tempo na região:
+          </h1>
+          <img src="./img/img3.svg" alt="ERROR">
+        </div>
+
+        <div class="previ-regiao" placeholder="">Previsão de tempo de acordo com a região:  <span id="temperatura"> </span>  °C</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>Termos de Uso | Política de Privacidade</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

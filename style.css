@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    font-family: "inter", sans-serif;
+}
+
+header {
+    background-color: #0C70F2;
+    width: auto;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo {
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 25px;
+}
+
+a:hover{
+    color: #393939;
+}
+
+
+/* === Seção === */
+
+section{
+    width: 100%;
+    padding-top: 124px;
+    background-color: #F2F2F2;
+    border: 1px solid #BABABA;
+}
+
+img{
+    padding-left: 40px;
+
+}
+
+.texto{
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 50px;
+    color: #1f1f1f;
+}
+
+.texto-img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+/* === Formulário === */
+
+.formulario{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 959px;
+    height: 1034px;
+    padding-top: 80px;
+    margin-bottom: 300px;
+    margin-top: 200px;
+}
+
+.form-label{
+    margin: auto;
+    font-size: 25px;
+}
+
+.descricao-label{
+    padding-bottom: 26px;
+}
+
+.form-input{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    border: none;
+    padding: 25px;
+    padding-left: 30px;
+    Width: 630px;
+    font-size: 20px;
+    color: #393939;
+}
+
+#lat, #long {
+    margin: 10px;
+    width: 275px;
+
+}
+
+.botao-acessar{
+    margin: auto;
+    background-color: #0C70F2;
+    width: 690px;
+    font-weight: 700;
+    font-size: 32px;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 80px;
+    margin-top: 100px;
+}
+
+.botao-acessar:hover{
+    cursor: pointer;
+    background-color: #c1d2e9;
+    color: #0C70F2;
+    border: 1px solid #0C70F2;
+}
+
+
+/* === Resultado de Busca === */
+
+.tables{
+    justify-content: space-around;
+}
+
+.table-supior{
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #0C70F2;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 1024px;
+    height: 75px;
+    border-radius: 30px 30px 0 0;
+    align-items: center;
+    color: #ffffff;
+}
+
+.table-inferior{
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 1024px;
+    height: 75px;
+    border-radius: 0 0 30px 30px;
+    align-items: center;
+    margin-bottom: 200px;
+    color: #1f1f1f;
+}
+
+
+/* === Previsão por Região === */
+
+.previ-regiao{
+    background-color: #ffffff;
+    border: 1px solid #0C70F2;
+    border-radius: 30px;
+    width: 1024px;
+    height: 65px;
+    font-size: 20px;
+    color: #1f1f1f;
+    font-weight: 800;
+    margin: 0px auto 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* === Footer === */
+
+footer{
+    background-color: #0C70F2;
+    width: 100%;
+    height: 95px;
+}
+
+p{
+    font-size: 25px;
+    color: #ffffff;
+    text-align: end;
+    padding: 32px;
+}
+
+
+
+/* ===== RESPONSIVIDADE ===== */
+
+
+
+@media(max-width:769px) {
+    header {
+        padding-left: 15px;
+        height: 45px;
+    }
+
+    a{
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    /* == Seção == */
+
+    section {
+        padding-top: 80px;
+    }
+
+    .texto {
+        font-size: 22px;
+    }
+
+    img {
+        width: 92px;
+    }
+
+    /* == Fomulário == */
+
+    .formulario {
+        width: 500px;
+        height: 600px;
+        margin-top: 100px;
+        margin-bottom: 170px;
+    }
+
+    .descricao-label {
+        padding-bottom: 12px;
+    }
+
+    .form-label {
+        font-size: 18px;
+    }
+
+    .form-input {
+        Width: 350px;
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    #lat, #long {
+        width: 148px;
+    }
+
+    .botao-acessar{
+        width: 350px;
+        font-weight: 550;
+        font-size: 23px;
+        padding: 11px;
+        margin-top: 50px;
+    }
+
+
+    /* == Resultado de Busca == */
+
+    .table-supior{
+        font-size: 14px;
+        font-weight: 650;
+        height: 55px;
+        width: 500px;
+    }
+
+    .table-inferior {
+        margin-bottom: 170px;
+        font-size: 14px;
+        font-weight: 650;
+        height: 55px;
+        width: 500px;
+    }
+
+    /* == Previsão por Região == */
+
+    .previ-regiao{
+        height: 55px;
+        font-size: 14px;
+        font-weight: 700;
+        width: 500px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    footer {
+        height: 85px;
+    }
+}
+
+
+
+@media(min-width:770px) and (max-width:932px) {
+    header {
+        padding-left: 20px;
+        height: 55px;
+    }
+
+    a{
+        font-size: 17px;
+    }
+
+    /* == Seção == */
+
+    .texto {
+        font-size: 35px;
+    }
+
+    img {
+        width: 122px;
+    }
+
+    /* == Fomulário == */
+
+    .formulario {
+        width: 730px;
+        height: 850px;
+    }
+
+    .form-label {
+        font-size: 22px;
+    }
+
+    .form-input {
+        Width: 500px;
+        font-size: 18px;
+        padding: 18px;
+    }
+
+    #lat, #long {
+        width: 228px;
+    }
+
+    .botao-acessar{
+        width: 500px;
+        font-weight: 600;
+        font-size: 28px;
+        padding: 18px;
+        margin-top: 70px;
+    }
+
+    /* == Resultado de Busca == */
+
+    .table-supior, .table-inferior, .previ-regiao {
+        width: 730px;
+    }
+
+
+
+    p {
+        font-size: 20px;
+    }
+
+}
+
+
+@media(min-width:933px) and (max-width:1165px) {
+
+    header {
+        padding-left: 20px;
+        height: 75px;
+    }
+
+    a{
+        font-size: 24px;
+    }
+
+    /* == Seção == */
+
+    .texto {
+        font-size: 42px;
+    }
+
+    img {
+        width: 162px;
+    }
+
+    /* == Fomulário == */
+
+    .formulario {
+        width: 770px;
+    }
+
+    /* == Resultado de Busca == */
+
+    .table-supior, .table-inferior, .previ-regiao {
+        width: 800px;
+    }
+}
